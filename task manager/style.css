@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+.task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.task-input input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.task-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.task-input button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.tasks-list {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.tasks-list ul {
+    list-style: none;
+    padding: 0;
+}
+.tasks-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.tasks-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.empty-message {
+    text-align: center;
+    color: #888;
+}
+.clear-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.clear-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
